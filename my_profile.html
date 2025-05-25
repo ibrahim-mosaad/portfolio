@@ -1,0 +1,657 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dr. Ibrahim Mosaad | AI Researcher & Educator</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        :root {
+            --primary: #3498db;
+            --dark: #2c3e50;
+            --light: #ecf0f1;
+            --accent: #e74c3c;
+        }
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            margin: 0;
+            padding: 0;
+            background-color: var(--light);
+        }
+        header {
+            background: linear-gradient(135deg, var(--dark), var(--primary));
+            color: white;
+            padding: 1rem 0;
+            text-align: center;
+        }
+        .container {
+            width: 85%;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0.5rem 0;
+        }
+        .logo-container {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        .logo-img {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 2px solid white;
+        }
+        .logo-text {
+            font-weight: bold;
+            font-size: 1.2rem;
+            color: white;
+            text-decoration: none;
+        }
+        nav ul {
+            display: flex;
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+        nav ul li {
+            margin-left: 2rem;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-weight: 500;
+            transition: all 0.3s ease;
+        }
+        nav a:hover {
+            color: var(--accent);
+        }
+        .hero {
+            padding: 3rem 0;
+            text-align: center;
+        }
+        .hero h1 {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+        }
+        .hero p {
+            font-size: 1.5rem;
+            max-width: 800px;
+            margin: 0 auto 2rem;
+        }
+        .profile-img {
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 5px solid white;
+            margin: 0 auto;
+            display: block;
+        }
+        section {
+            padding: 4rem 0;
+        }
+        .section-title {
+            text-align: center;
+            margin-bottom: 3rem;
+            color: var(--dark);
+        }
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+        }
+        .card {
+            background: white;
+            border-radius: 8px;
+            padding: 2rem;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease;
+        }
+        .card:hover {
+            transform: translateY(-10px);
+        }
+        .experience-item {
+            margin-bottom: 2rem;
+        }
+        .experience-item h3 {
+            color: var(--primary);
+            margin-bottom: 0.5rem;
+        }
+        .experience-date {
+            color: #777;
+            font-style: italic;
+            margin-bottom: 1rem;
+        }
+        .skill-category {
+            margin-bottom: 2rem;
+        }
+        .skill-category h3 {
+            border-bottom: 2px solid var(--primary);
+            padding-bottom: 0.5rem;
+            margin-bottom: 1rem;
+        }
+        .skills-list {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.5rem;
+        }
+        .skill-tag {
+            background: var(--primary);
+            color: white;
+            padding: 0.5rem 1rem;
+            border-radius: 20px;
+            font-size: 0.9rem;
+        }
+        footer {
+            background: var(--dark);
+            color: white;
+            text-align: center;
+            padding: 2rem 0;
+            margin-top: 2rem;
+        }
+        .social-links {
+            display: flex;
+            justify-content: center;
+            gap: 1rem;
+            margin: 1rem 0;
+        }
+        .social-links a {
+            color: white;
+            font-size: 1.5rem;
+            transition: all 0.3s ease;
+        }
+        .social-links a:hover {
+            color: var(--accent);
+        }
+        form {
+            max-width: 600px;
+            margin: 0 auto;
+        }
+        form input, form textarea {
+            width: 100%;
+            padding: 1rem;
+            margin-bottom: 1rem;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+        }
+        form button {
+            background: var(--primary);
+            color: white;
+            border: none;
+            padding: 1rem 2rem;
+            border-radius: 4px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+        form button:hover {
+            background: var(--dark);
+        }
+        .theme-toggle {
+            background: none;
+            border: none;
+            color: white;
+            cursor: pointer;
+            font-size: 1.2rem;
+            margin-left: 1rem;
+        }
+        .certificates-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+            gap: 1.5rem;
+        }
+        .certificate-item {
+            background: white;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease;
+        }
+        .certificate-item:hover {
+            transform: translateY(-5px);
+        }
+        .certificate-img {
+            width: 100%;
+            height: 180px;
+            object-fit: cover;
+            border-bottom: 1px solid #eee;
+            cursor: pointer;
+        }
+        .certificate-info {
+            padding: 1rem;
+        }
+        .certificate-info h4 {
+            margin: 0 0 0.5rem 0;
+            color: var(--primary);
+        }
+        .certificate-info p {
+            margin: 0;
+            color: #666;
+            font-size: 0.9rem;
+        }
+        .modal {
+            display: none;
+            position: fixed;
+            z-index: 100;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0,0,0,0.9);
+        }
+        .modal-content {
+            margin: auto;
+            display: block;
+            max-width: 90%;
+            max-height: 90%;
+            margin-top: 5vh;
+        }
+        .close {
+            position: absolute;
+            top: 20px;
+            right: 30px;
+            color: white;
+            font-size: 35px;
+            font-weight: bold;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <nav>
+                <div class="logo-container">
+                    <img src="profile-logo.jpg" alt="Ibrahim Mosaad" class="logo-img">
+                    <a href="#" class="logo-text">Dr. Ibrahim</a>
+                </div>
+                <ul>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#experience">Experience</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#publications">Publications</a></li>
+                    <li><a href="#certificates">Certificates</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <li>
+                        <button class="theme-toggle"><i class="fas fa-moon"></i></button>
+                    </li>
+                </ul>
+            </nav>
+            
+            <div class="hero">
+                <img src="profile.jpg" alt="Ibrahim Mosaad" class="profile-img">
+                <h1>Hi, I'm Ibrahim Mosaad</h1>
+                <p>AI Research Scientist | Huawei Certified Instructor | Medical AI Specialist</p>
+            </div>
+        </div>
+    </header>
+
+    <section id="about" class="container">
+        <h2 class="section-title">About Me</h2>
+        <div class="card">
+            <p>AI researcher and educator with extensive experience in developing cutting-edge artificial intelligence solutions for healthcare applications. Currently pursuing doctoral studies with a focus on medical image analysis and neurodegenerative disease detection. Certified Huawei AI instructor passionate about bridging the gap between academic research and industrial applications.</p>
+            <p>My work combines technical expertise in deep learning with a strong commitment to creating AI solutions that address real-world challenges in healthcare and accessibility. With experience mentoring 500+ students and professionals, I'm dedicated to advancing AI education in the Middle East.</p>
+        </div>
+    </section>
+
+    <section id="experience" class="container">
+        <h2 class="section-title">Professional Experience</h2>
+        
+        <div class="grid">
+            <div class="card">
+                <div class="experience-item">
+                    <h3>Huawei Certified AI Instructor</h3>
+                    <p class="experience-date">2023 - Present | Cairo, Egypt</p>
+                    <ul>
+                        <li>Deliver advanced training on Huawei Cloud AI services and HCIA-AI certification curriculum</li>
+                        <li>Develop custom learning materials for AI/ML applications in industry settings</li>
+                        <li>Mentor professionals in implementing AI solutions using Huawei's ecosystem</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="card">
+                <div class="experience-item">
+                    <h3>AI Researcher & Lecturer</h3>
+                    <p class="experience-date">2022 - Present | National Telecommunications Institute</p>
+                    <ul>
+                        <li>Lead research projects in medical AI and computer vision</li>
+                        <li>Develop curriculum for graduate-level AI courses</li>
+                        <li>Supervise student projects in deep learning applications</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="card">
+                <div class="experience-item">
+                    <h3>Head of Computer Science Department</h3>
+                    <p class="experience-date">2022 - Present | Professor Foundation, Qatar</p>
+                    <ul>
+                        <li>Oversee academic programs in AI and computer science</li>
+                        <li>Coordinate research collaborations with industry partners</li>
+                        <li>Develop strategic plans for curriculum enhancement</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="skills" class="container">
+        <h2 class="section-title">Technical Expertise</h2>
+        
+        <div class="grid">
+            <div class="card">
+                <div class="skill-category">
+                    <h3>AI/ML Development</h3>
+                    <div class="skills-list">
+                        <span class="skill-tag">TensorFlow</span>
+                        <span class="skill-tag">PyTorch</span>
+                        <span class="skill-tag">Keras</span>
+                        <span class="skill-tag">Scikit-learn</span>
+                        <span class="skill-tag">OpenCV</span>
+                        <span class="skill-tag">NLTK</span>
+                        <span class="skill-tag">CNNs</span>
+                        <span class="skill-tag">Transformers</span>
+                    </div>
+                </div>
+                
+                <div class="skill-category">
+                    <h3>Medical AI Specialization</h3>
+                    <div class="skills-list">
+                        <span class="skill-tag">Medical Imaging</span>
+                        <span class="skill-tag">DICOM Processing</span>
+                        <span class="skill-tag">Alzheimer's Detection</span>
+                        <span class="skill-tag">Heart Disease Prediction</span>
+                        <span class="skill-tag">Federated Learning</span>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="card">
+                <div class="skill-category">
+                    <h3>Software Engineering</h3>
+                    <div class="skills-list">
+                        <span class="skill-tag">Python</span>
+                        <span class="skill-tag">Flutter</span>
+                        <span class="skill-tag">Dart</span>
+                        <span class="skill-tag">Java</span>
+                        <span class="skill-tag">C++</span>
+                        <span class="skill-tag">Django</span>
+                        <span class="skill-tag">Flask</span>
+                        <span class="skill-tag">REST APIs</span>
+                    </div>
+                </div>
+                
+                <div class="skill-category">
+                    <h3>Cloud & Deployment</h3>
+                    <div class="skills-list">
+                        <span class="skill-tag">Huawei Cloud</span>
+                        <span class="skill-tag">Firebase</span>
+                        <span class="skill-tag">Docker</span>
+                        <span class="skill-tag">Kubernetes</span>
+                        <span class="skill-tag">CI/CD</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects" class="container">
+        <h2 class="section-title">Featured Projects</h2>
+        
+        <div class="grid">
+            <div class="card">
+                <h3>Alzheimer's Disease Stage Detection</h3>
+                <p>CNN model achieving 88% accuracy in classifying Alzheimer's progression stages from MRI scans</p>
+                <p><strong>Technologies:</strong> TensorFlow, Keras, OpenCV, DICOM</p>
+                <a href="#">View Project →</a>
+            </div>
+            
+            <div class="card">
+                <h3>CraftsMan AI Platform</h3>
+                <p>Flutter-based mobile app with AI matching system connecting users with skilled workers</p>
+                <p><strong>Technologies:</strong> Flutter, Firebase, Recommendation Systems</p>
+                <a href="https://play.google.com/store/apps/details?id=com.logincode.crafts">View on Play Store →</a>
+            </div>
+            
+            <div class="card">
+                <h3>Heart Disease Prediction System</h3>
+                <p>Machine learning model with 99% accuracy for early heart disease detection</p>
+                <p><strong>Technologies:</strong> Scikit-learn, Pandas, Feature Engineering</p>
+                <a href="#">View Project →</a>
+            </div>
+            
+            <div class="card">
+                <h3>Professor Academic Platform</h3>
+                <p>Comprehensive staff management system for Qatari educational institutions</p>
+                <p><strong>Technologies:</strong> Flutter, Firebase, Cloud Functions</p>
+                <a href="https://play.google.com/store/apps/details?id=com.logincode.professor">View on Play Store →</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="publications" class="container">
+        <h2 class="section-title">Research Publications</h2>
+        
+        <div class="card">
+            <h3>Advanced CNN Architectures for Neurodegenerative Disease Detection</h3>
+            <p class="experience-date">2024 | Journal of Medical AI</p>
+            <p>Comparative study of deep learning approaches for early Alzheimer's detection from MRI scans</p>
+            <a href="#">Read Paper →</a>
+        </div>
+        
+        <div class="card">
+            <h3>Federated Learning in Middle Eastern Healthcare Systems</h3>
+            <p class="experience-date">2023 | IEEE International Conference on AI in Medicine</p>
+            <p>Addressing data privacy challenges in medical AI applications across hospital networks</p>
+            <a href="#">Read Paper →</a>
+        </div>
+    </section>
+
+    <section id="certificates" class="container">
+        <h2 class="section-title">Professional Certifications</h2>
+        
+        <div class="certificates-grid">
+            <!-- Huawei Certificates -->
+            <div class="certificate-item">
+                <img src="certificates/huawei-hcai.jpg" alt="Huawei Certified AI Instructor" class="certificate-img" onclick="openModal(this)">
+                <div class="certificate-info">
+                    <h4>Huawei Certified AI Instructor</h4>
+                    <p>2023 | Huawei Technologies</p>
+                </div>
+            </div>
+            
+            <div class="certificate-item">
+                <img src="certificates/huawei-hcia-ai.jpg" alt="Huawei HCIA-AI Certification" class="certificate-img" onclick="openModal(this)">
+                <div class="certificate-info">
+                    <h4>HCIA-AI Certification</h4>
+                    <p>2023 | Huawei Academy</p>
+                </div>
+            </div>
+            
+            <!-- Stanford Certificate -->
+            <div class="certificate-item">
+                <img src="certificates/stanford-ml.jpg" alt="Stanford Machine Learning" class="certificate-img" onclick="openModal(this)">
+                <div class="certificate-info">
+                    <h4>Machine Learning Specialization</h4>
+                    <p>2021 | Stanford University</p>
+                </div>
+            </div>
+            
+            <!-- Kaggle Certificate -->
+            <div class="certificate-item">
+                <img src="certificates/kaggle-ml.jpg" alt="Kaggle Machine Learning" class="certificate-img" onclick="openModal(this)">
+                <div class="certificate-info">
+                    <h4>Intro to Machine Learning</h4>
+                    <p>Kaggle</p>
+                </div>
+            </div>
+            
+            <!-- DataCamp Certificates -->
+            <div class="certificate-item">
+                <img src="certificates/datacamp-ml.jpg" alt="DataCamp Machine Learning" class="certificate-img" onclick="openModal(this)">
+                <div class="certificate-info">
+                    <h4>Machine Learning with scikit-learn</h4>
+                    <p>DataCamp</p>
+                </div>
+            </div>
+            
+            <div class="certificate-item">
+                <img src="certificates/datacamp-python.jpg" alt="DataCamp Python" class="certificate-img" onclick="openModal(this)">
+                <div class="certificate-info">
+                    <h4>Introduction to Python</h4>
+                    <p>DataCamp</p>
+                </div>
+            </div>
+            
+            <div class="certificate-item">
+                <img src="certificates/datacamp-oop.jpg" alt="DataCamp OOP" class="certificate-img" onclick="openModal(this)">
+                <div class="certificate-info">
+                    <h4>Object-Oriented Programming</h4>
+                    <p>DataCamp</p>
+                </div>
+            </div>
+            
+            <div class="certificate-item">
+                <img src="certificates/datacamp-pandas.jpg" alt="DataCamp Pandas" class="certificate-img" onclick="openModal(this)">
+                <div class="certificate-info">
+                    <h4>Data Manipulation with pandas</h4>
+                    <p>DataCamp</p>
+                </div>
+            </div>
+            
+            <!-- Udacity Certificate -->
+            <div class="certificate-item">
+                <img src="certificates/udacity-android.jpg" alt="Udacity Android" class="certificate-img" onclick="openModal(this)">
+                <div class="certificate-info">
+                    <h4>Android Developer Nanodegree</h4>
+                    <p>Udacity</p>
+                </div>
+            </div>
+            
+            <!-- Udemy Certificate -->
+            <div class="certificate-item">
+                <img src="certificates/udemy-flutter.jpg" alt="Udemy Flutter" class="certificate-img" onclick="openModal(this)">
+                <div class="certificate-info">
+                    <h4>Flutter Advanced Course</h4>
+                    <p>Udemy</p>
+                </div>
+            </div>
+            
+            <!-- Meta Certificates -->
+            <div class="certificate-item">
+                <img src="certificates/meta-python.jpg" alt="Meta Python" class="certificate-img" onclick="openModal(this)">
+                <div class="certificate-info">
+                    <h4>Programming in Python</h4>
+                    <p>Meta</p>
+                </div>
+            </div>
+            
+            <div class="certificate-item">
+                <img src="certificates/meta-git.jpg" alt="Meta Git" class="certificate-img" onclick="openModal(this)">
+                <div class="certificate-info">
+                    <h4>Version Control (Git/GitHub)</h4>
+                    <p>Meta</p>
+                </div>
+            </div>
+            
+            <!-- Ministry Certificate -->
+            <div class="certificate-item">
+                <img src="certificates/moc-android.jpg" alt="Ministry Android" class="certificate-img" onclick="openModal(this)">
+                <div class="certificate-info">
+                    <h4>Android Developer Nanodegree</h4>
+                    <p>Ministry of Communications</p>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Modal for certificate images -->
+        <div id="certificateModal" class="modal">
+            <span class="close" onclick="closeModal()">&times;</span>
+            <img class="modal-content" id="modalImage">
+        </div>
+    </section>
+
+    <section id="contact" class="container">
+        <h2 class="section-title">Get In Touch</h2>
+        
+        <div class="grid">
+            <div class="card">
+                <h3>Contact Information</h3>
+                <p><i class="fas fa-map-marker-alt"></i> Cairo, Egypt</p>
+                <p><i class="fas fa-envelope"></i> ibrahimhamadamosaad@gmail.com</p>
+                <p><i class="fas fa-phone"></i> +20 109 320 8432</p>
+                
+                <div class="social-links">
+                    <a href="https://linkedin.com/in/ibrahim-hamada-mosaad-a91a66170" target="_blank"><i class="fab fa-linkedin"></i></a>
+                    <a href="https://github.com/bebofak" target="_blank"><i class="fab fa-github"></i></a>
+                    <a href="#" target="_blank"><i class="fab fa-google-scholar"></i></a>
+                    <a href="#" target="_blank"><i class="fab fa-researchgate"></i></a>
+                    <a href="#" target="_blank"><i class="fab fa-kaggle"></i></a>
+                </div>
+            </div>
+            
+            <div class="card">
+                <form>
+                    <input type="text" placeholder="Your Name" required>
+                    <input type="email" placeholder="Your Email" required>
+                    <textarea rows="5" placeholder="Your Message" required></textarea>
+                    <button type="submit">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>© 2024 Dr. Ibrahim Hamada Mosaad. All rights reserved.</p>
+    </footer>
+
+    <script>
+        // Theme toggle functionality
+        const themeToggle = document.querySelector('.theme-toggle');
+        themeToggle.addEventListener('click', () => {
+            document.body.classList.toggle('dark-theme');
+            const icon = themeToggle.querySelector('i');
+            if (document.body.classList.contains('dark-theme')) {
+                icon.classList.remove('fa-moon');
+                icon.classList.add('fa-sun');
+                document.documentElement.style.setProperty('--light', '#2c3e50');
+                document.documentElement.style.setProperty('--dark', '#ecf0f1');
+            } else {
+                icon.classList.remove('fa-sun');
+                icon.classList.add('fa-moon');
+                document.documentElement.style.setProperty('--light', '#ecf0f1');
+                document.documentElement.style.setProperty('--dark', '#2c3e50');
+            }
+        });
+        
+        // Modal functionality for certificates
+        function openModal(img) {
+            const modal = document.getElementById('certificateModal');
+            const modalImg = document.getElementById('modalImage');
+            modal.style.display = "block";
+            modalImg.src = img.src;
+        }
+        
+        function closeModal() {
+            document.getElementById('certificateModal').style.display = "none";
+        }
+        
+        // Close when clicking outside the image
+        window.onclick = function(event) {
+            const modal = document.getElementById('certificateModal');
+            if (event.target == modal) {
+                closeModal();
+            }
+        }
+    </script>
+</body>
+</html>
