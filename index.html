@@ -443,6 +443,18 @@
             .contact-card .social-links a {
                 font-size: 1.5rem;
             }
+            .visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border: 0;
+}
+
         }
     </style>
 </head>
@@ -463,9 +475,12 @@
                     <li><a href="#publications">Publications</a></li>
                     <li><a href="#certificates">Certificates</a></li>
                     <li><a href="#contact">Contact</a></li>
-                    <li>
-                        <button class="theme-toggle"><i class="fas fa-moon"></i></button>
-                    </li>
+                   <li>
+    <button class="theme-toggle">
+        <i class="fas fa-moon"></i> <span class="visually-hidden">Toggle dark mode</span>
+    </button>
+</li>
+
                 </ul>
             </nav>
             
