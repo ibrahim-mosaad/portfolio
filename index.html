@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -13,6 +14,7 @@
             --accent: #e74c3c;
             --mobile-font-scale: 0.85;
         }
+
         body {
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             line-height: 1.6;
@@ -22,17 +24,20 @@
             background-color: var(--light);
             overflow-x: hidden;
         }
+
         header {
             background: linear-gradient(135deg, var(--dark), var(--primary));
             color: white;
             padding: 1rem 0;
             text-align: center;
         }
+
         .container {
             width: 85%;
             max-width: 1200px;
             margin: 0 auto;
         }
+
         nav {
             display: flex;
             justify-content: space-between;
@@ -40,11 +45,13 @@
             padding: 0.5rem 0;
             position: relative;
         }
+
         .logo-container {
             display: flex;
             align-items: center;
             gap: 10px;
         }
+
         .contact-card {
             background-color: #ffffff;
             border-radius: 15px;
@@ -53,23 +60,28 @@
             text-align: left;
             transition: transform 0.3s ease;
         }
+
         .contact-card:hover {
             transform: translateY(-5px);
         }
+
         .contact-card h3 {
             font-size: 1.5rem;
             margin-bottom: 20px;
             color: #333;
         }
+
         .contact-card p {
             font-size: 1rem;
             margin: 10px 0;
             color: #555;
         }
+
         .contact-card i {
             color: #0077b5;
             margin-right: 10px;
         }
+
         .contact-card .social-links {
             margin-top: 20px;
             display: flex;
@@ -77,15 +89,18 @@
             justify-content: center;
             flex-wrap: wrap;
         }
+
         .contact-card .social-links a {
             font-size: 1.8rem;
             color: #444;
             transition: color 0.3s, transform 0.3s;
         }
+
         .contact-card .social-links a:hover {
             color: #0077b5;
             transform: scale(1.2);
         }
+
         .logo-img {
             width: 40px;
             height: 40px;
@@ -93,36 +108,43 @@
             object-fit: cover;
             border: 2px solid white;
         }
+
         .social-icons {
             margin-top: 25px;
             display: flex;
             justify-content: center;
             gap: 25px;
         }
+
         .social-icons a {
             color: white;
             font-size: 2rem;
             transition: transform 0.3s ease, color 0.3s ease;
         }
+
         .social-icons a:hover {
             color: #ffd700;
             transform: scale(1.3);
         }
+
         .logo-text {
             font-weight: bold;
             font-size: 1.2rem;
             color: white;
             text-decoration: none;
         }
+
         nav ul {
             display: flex;
             list-style: none;
             margin: 0;
             padding: 0;
         }
+
         nav ul li {
             margin-left: 2rem;
         }
+
         nav a {
             color: white;
             text-decoration: none;
@@ -130,22 +152,27 @@
             transition: all 0.3s ease;
             -webkit-tap-highlight-color: transparent;
         }
+
         nav a:hover {
             color: var(--accent);
         }
+
         .hero {
             padding: 3rem 0;
             text-align: center;
         }
+
         .hero h1 {
             font-size: 3rem;
             margin-bottom: 1rem;
         }
+
         .hero p {
             font-size: 1.5rem;
             max-width: 800px;
             margin: 0 auto 2rem;
         }
+
         .profile-img {
             width: 200px;
             height: 200px;
@@ -156,55 +183,67 @@
             display: block;
             max-width: 100%;
         }
+
         section {
             padding: 4rem 0;
         }
+
         .section-title {
             text-align: center;
             margin-bottom: 3rem;
             color: var(--dark);
         }
+
         .grid {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
             gap: 2rem;
         }
+
         .card {
             background: white;
             border-radius: 8px;
             padding: 2rem;
-            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
             transition: transform 0.3s ease;
         }
+
         .card:hover {
             transform: translateY(-10px);
         }
+
         .experience-item {
             margin-bottom: 2rem;
         }
+
         .experience-item h3 {
             color: var(--primary);
             margin-bottom: 0.5rem;
         }
+
         .experience-date {
             color: #777;
             font-style: italic;
             margin-bottom: 1rem;
         }
+
         .skill-category {
             margin-bottom: 2rem;
         }
+
         .skill-category h3 {
             border-bottom: 2px solid var(--primary);
             padding-bottom: 0.5rem;
             margin-bottom: 1rem;
         }
+
         .skills-list {
             display: flex;
             flex-wrap: wrap;
             gap: 0.5rem;
             justify-content: center;
         }
+
         .skill-tag {
             background: var(--primary);
             color: white;
@@ -212,6 +251,7 @@
             border-radius: 20px;
             font-size: 0.9rem;
         }
+
         footer {
             background: var(--dark);
             color: white;
@@ -219,25 +259,31 @@
             padding: 2rem 0;
             margin-top: 2rem;
         }
+
         .social-links {
             display: flex;
             justify-content: center;
             gap: 1rem;
             margin: 1rem 0;
         }
+
         .social-links a {
             color: white;
             font-size: 1.5rem;
             transition: all 0.3s ease;
         }
+
         .social-links a:hover {
             color: var(--accent);
         }
+
         form {
             max-width: 600px;
             margin: 0 auto;
         }
-        form input, form textarea {
+
+        form input,
+        form textarea {
             width: 100%;
             padding: 1rem;
             margin-bottom: 1rem;
@@ -245,6 +291,7 @@
             border-radius: 4px;
             font-size: 16px;
         }
+
         form button {
             background: var(--primary);
             color: white;
@@ -254,9 +301,11 @@
             cursor: pointer;
             transition: all 0.3s ease;
         }
+
         form button:hover {
             background: var(--dark);
         }
+
         .theme-toggle {
             background: none;
             border: none;
@@ -265,21 +314,25 @@
             font-size: 1.2rem;
             margin-left: 1rem;
         }
+
         .certificates-grid {
             display: grid;
             grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
             gap: 1.5rem;
         }
+
         .certificate-item {
             background: white;
             border-radius: 8px;
             overflow: hidden;
-            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
             transition: transform 0.3s ease;
         }
+
         .certificate-item:hover {
             transform: translateY(-5px);
         }
+
         .certificate-img {
             width: 100%;
             height: 180px;
@@ -287,18 +340,22 @@
             border-bottom: 1px solid #eee;
             cursor: pointer;
         }
+
         .certificate-info {
             padding: 1rem;
         }
+
         .certificate-info h4 {
             margin: 0 0 0.5rem 0;
             color: var(--primary);
         }
+
         .certificate-info p {
             margin: 0;
             color: #666;
             font-size: 0.9rem;
         }
+
         .modal {
             display: none;
             position: fixed;
@@ -307,8 +364,9 @@
             top: 0;
             width: 100%;
             height: 100%;
-            background-color: rgba(0,0,0,0.9);
+            background-color: rgba(0, 0, 0, 0.9);
         }
+
         .modal-content {
             margin: auto;
             display: block;
@@ -316,6 +374,7 @@
             max-height: 90%;
             margin-top: 5vh;
         }
+
         .close {
             position: absolute;
             top: 20px;
@@ -325,7 +384,7 @@
             font-weight: bold;
             cursor: pointer;
         }
-        
+
         /* Mobile Menu Button */
         .mobile-menu-btn {
             display: none;
@@ -335,129 +394,142 @@
             font-size: 1.5rem;
             cursor: pointer;
         }
-        
+
         /* Media Queries for Responsive Design */
         @media (max-width: 768px) {
             .container {
                 width: 95%;
             }
-            
+
             nav {
                 flex-direction: column;
                 padding: 1rem 0;
             }
-            
+
             .mobile-menu-btn {
                 display: block;
                 position: absolute;
                 right: 20px;
                 top: 20px;
             }
-            
+
             nav ul {
                 display: none;
                 flex-direction: column;
                 width: 100%;
                 margin-top: 1rem;
             }
-            
+
             nav ul.active {
                 display: flex;
             }
-            
+
             nav ul li {
                 margin: 0.5rem 0;
                 text-align: center;
                 margin-left: 0;
             }
-            
+
             .hero h1 {
                 font-size: 2rem;
             }
-            
+
             .hero p {
                 font-size: 1.2rem;
             }
-            
+
             .profile-img {
                 width: 150px;
                 height: 150px;
             }
-            
+
             .grid {
                 grid-template-columns: 1fr;
             }
-            
+
             .certificates-grid {
                 grid-template-columns: 1fr;
             }
-            
+
             .skills-list {
                 justify-content: center;
             }
-            
+
             .contact-card {
                 padding: 20px;
             }
-            
+
             .social-icons a {
                 font-size: 1.5rem;
             }
-            
+
             body {
                 font-size: calc(1rem * var(--mobile-font-scale));
             }
-            
-            h1 { font-size: 2rem; }
-            h2 { font-size: 1.75rem; }
-            h3 { font-size: 1.5rem; }
-            h4 { font-size: 1.25rem; }
+
+            h1 {
+                font-size: 2rem;
+            }
+
+            h2 {
+                font-size: 1.75rem;
+            }
+
+            h3 {
+                font-size: 1.5rem;
+            }
+
+            h4 {
+                font-size: 1.25rem;
+            }
         }
 
         @media (max-width: 480px) {
             .hero h1 {
                 font-size: 1.8rem;
             }
-            
+
             .hero p {
                 font-size: 1rem;
             }
-            
+
             .section-title {
                 font-size: 1.5rem;
                 margin-bottom: 2rem;
             }
-            
+
             .card {
                 padding: 1rem;
             }
-            
+
             .contact-card h3 {
                 font-size: 1.3rem;
             }
-            
+
             .contact-card p {
                 font-size: 0.9rem;
             }
-            
+
             .contact-card .social-links a {
                 font-size: 1.5rem;
             }
+
             .visually-hidden {
-    position: absolute;
-    width: 1px;
-    height: 1px;
-    padding: 0;
-    margin: -1px;
-    overflow: hidden;
-    clip: rect(0, 0, 0, 0);
-    white-space: nowrap;
-    border: 0;
-}
+                position: absolute;
+                width: 1px;
+                height: 1px;
+                padding: 0;
+                margin: -1px;
+                overflow: hidden;
+                clip: rect(0, 0, 0, 0);
+                white-space: nowrap;
+                border: 0;
+            }
 
         }
     </style>
 </head>
+
 <body>
     <header>
         <div class="container">
@@ -475,58 +547,68 @@
                     <li><a href="#publications">Publications</a></li>
                     <li><a href="#certificates">Certificates</a></li>
                     <li><a href="#contact">Contact</a></li>
-                   <li>
-    <button class="theme-toggle">
-        <i class="fas fa-moon"></i> <span class="visually-hidden">Toggle dark mode</span>
-    </button>
-</li>
+                    <li>
+                        <button class="theme-toggle">
+                            <i class="fas fa-moon"></i> <span class="visually-hidden">Toggle dark mode</span>
+                        </button>
+                    </li>
 
                 </ul>
             </nav>
-            
+
             <div class="hero">
                 <img src="profile.jpg" alt="Ibrahim Mosaad" class="profile-img">
                 <h1>Hi, I'm Ibrahim Mosaad</h1>
                 <p>AI Researcher | Instructor | Medical AI Enthusiast</p>
             </div>
             <div class="social-icons">
-                <a href="https://linkedin.com/in/ibrahim-hamada-mosaad-a91a66170" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
-                <a href="https://github.com/ibrahim-mosaad" target="_blank" rel="noopener" aria-label="GitHub"><i class="fab fa-github"></i></a>
-                <a href="#" target="_blank" rel="noopener" aria-label="Google Scholar"><i class="fas fa-graduation-cap"></i></a>
+                <a href="https://linkedin.com/in/ibrahim-hamada-mosaad-a91a66170" target="_blank" rel="noopener"
+                    aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                <a href="https://github.com/ibrahim-mosaad" target="_blank" rel="noopener" aria-label="GitHub"><i
+                        class="fab fa-github"></i></a>
+                <a href="#" target="_blank" rel="noopener" aria-label="Google Scholar"><i
+                        class="fas fa-graduation-cap"></i></a>
                 <a href="#" target="_blank" rel="noopener" aria-label="ResearchGate"><i class="fas fa-flask"></i></a>
-                <a href="https://www.kaggle.com/ibrahimhamadamosaad" target="_blank" rel="noopener" aria-label="Kaggle"><i class="fab fa-kaggle"></i></a>
+                <a href="https://www.kaggle.com/ibrahimhamadamosaad" target="_blank" rel="noopener"
+                    aria-label="Kaggle"><i class="fab fa-kaggle"></i></a>
             </div>
         </div>
     </header>
 
     <section id="about" class="container">
         <h2 class="section-title">About Me</h2>
-       <div class="card">
+        <div class="card">
             <p>
-                AI researcher and educator with extensive experience in developing cutting-edge artificial intelligence solutions for healthcare applications. Actively seeking doctoral opportunities focusing on medical image analysis and neurodegenerative disease detection. Certified Huawei AI instructor passionate about bridging the gap between academic research and industrial applications.
+                AI researcher and educator with extensive experience in developing cutting-edge artificial intelligence
+                solutions for healthcare applications. Actively seeking doctoral opportunities focusing on medical image
+                analysis and neurodegenerative disease detection. Certified Huawei AI instructor passionate about
+                bridging the gap between academic research and industrial applications.
             </p>
             <p>
-                My work combines technical expertise in deep learning with a strong commitment to creating AI solutions that address real-world challenges in healthcare and accessibility. With experience mentoring 1000+ students and professionals, I'm dedicated to advancing AI Education.
+                My work combines technical expertise in deep learning with a strong commitment to creating AI solutions
+                that address real-world challenges in healthcare and accessibility. With experience mentoring 1000+
+                students and professionals, I'm dedicated to advancing AI Education.
             </p>
         </div>
     </section>
 
     <section id="experience" class="container">
         <h2 class="section-title">Professional Experience</h2>
-        
+
         <div class="grid">
             <div class="card">
                 <div class="experience-item">
                     <h3>Huawei Certified AI Instructor</h3>
                     <p class="experience-date">2022 - Present | Cairo, Egypt</p>
                     <ul>
-                        <li>Deliver advanced training on Huawei Cloud AI services and HCIA-AI certification curriculum</li>
+                        <li>Deliver advanced training on Huawei Cloud AI services and HCIA-AI certification curriculum
+                        </li>
                         <li>Develop custom learning materials for AI/ML applications in industry settings</li>
                         <li>Mentor professionals in implementing AI solutions using Huawei's ecosystem</li>
                     </ul>
                 </div>
             </div>
-            
+
             <div class="card">
                 <div class="experience-item">
                     <h3>AI Researcher & Lecturer</h3>
@@ -538,7 +620,7 @@
                     </ul>
                 </div>
             </div>
-            
+
             <div class="card">
                 <div class="experience-item">
                     <h3>Head of Computer Science Department</h3>
@@ -555,7 +637,7 @@
 
     <section id="skills" class="container">
         <h2 class="section-title">Technical Expertise</h2>
-        
+
         <div class="grid">
             <div class="card">
                 <div class="skill-category">
@@ -571,7 +653,7 @@
                         <span class="skill-tag">Transformers</span>
                     </div>
                 </div>
-                
+
                 <div class="skill-category">
                     <h3>Medical AI Specialization</h3>
                     <div class="skills-list">
@@ -583,7 +665,7 @@
                     </div>
                 </div>
             </div>
-            
+
             <div class="card">
                 <div class="skill-category">
                     <h3>Software Engineering</h3>
@@ -598,7 +680,7 @@
                         <span class="skill-tag">REST APIs</span>
                     </div>
                 </div>
-                
+
                 <div class="skill-category">
                     <h3>Cloud & Deployment</h3>
                     <div class="skills-list">
@@ -615,7 +697,7 @@
 
     <section id="projects" class="container">
         <h2 class="section-title">Featured Projects</h2>
-        
+
         <div class="grid">
             <div class="card">
                 <h3>Alzheimer's Disease Stage Detection</h3>
@@ -623,21 +705,21 @@
                 <p><strong>Technologies:</strong> TensorFlow, Keras, OpenCV, DICOM</p>
                 <a href="https://github.com/ibrahim-mosaad">View Project →</a>
             </div>
-            
+
             <div class="card">
                 <h3>CraftsMan AI Platform</h3>
                 <p>Flutter-based mobile app with AI matching system connecting users with skilled workers</p>
                 <p><strong>Technologies:</strong> Flutter, Firebase, Recommendation Systems</p>
                 <a href="https://play.google.com/store/apps/details?id=com.logincode.crafts">View on Play Store →</a>
             </div>
-            
+
             <div class="card">
                 <h3>Heart Disease Prediction System</h3>
                 <p>Machine learning model with 99% accuracy for early heart disease detection</p>
                 <p><strong>Technologies:</strong> Scikit-learn, Pandas, Feature Engineering</p>
                 <a href="https://github.com/ibrahim-mosaad">View Project →</a>
             </div>
-            
+
             <div class="card">
                 <h3>Professor Academic Platform</h3>
                 <p>Comprehensive staff management system for Qatari educational institutions</p>
@@ -649,14 +731,14 @@
 
     <section id="publications" class="container">
         <h2 class="section-title">Research Publications</h2>
-        
+
         <div class="card">
             <h3>Advanced CNN Architectures for Neurodegenerative Disease Detection</h3>
             <p class="experience-date">2024 | Journal of Medical AI</p>
             <p>Comparative study of deep learning approaches for early Alzheimer's detection from MRI scans</p>
             <a href="#">Under Review →</a>
         </div>
-        
+
         <div class="card">
             <h3>Federated Learning in Middle Eastern Healthcare Systems</h3>
             <p class="experience-date">2023 | IEEE International Conference on AI in Medicine</p>
@@ -667,59 +749,75 @@
 
     <section id="certificates" class="container">
         <h2 class="section-title">Professional Certifications</h2>
-        
+
         <div class="certificates-grid">
             <!-- Huawei Certificates -->
             <div class="certificate-item">
-                <img src="certificates/huawei-hcai.jpg" alt="Huawei Certified AI Instructor" class="certificate-img" onclick="openModal(this)">
+                <img src="certificates/huawei-hcai.jpg" alt="Huawei Certified AI Instructor" class="certificate-img"
+                    onclick="openModal(this)">
                 <div class="certificate-info">
                     <h4>Huawei Certified AI Instructor</h4>
                     <p>2022 | Huawei Technologies</p>
                 </div>
             </div>
-            
+
             <div class="certificate-item">
-                <img src="certificates/huawei-hcia-ai.jpg" alt="Huawei HCIA-AI Certification" class="certificate-img" onclick="openModal(this)">
+                <img src="certificates/huawei-hcia-ai.jpg" alt="Huawei HCIA-AI Certification" class="certificate-img"
+                    onclick="openModal(this)">
                 <div class="certificate-info">
                     <h4>HCIA-AI Certification</h4>
                     <p>2022 | Huawei Academy</p>
                 </div>
             </div>
-            
+            <div class="certificate-item">
+                <img src="certificates/NVIDIA_llm.jpg" alt="NVIDIA LLM Certification" class="certificate-img"
+                    onclick="openModal(this)">
+                <div class="certificate-info">
+                    <h4>Evaluation and Light Customization of Large Language Models</h4>
+                    <p>2025 | NVIDIA</p>
+                </div>
+            </div>
+
+
             <!-- Stanford Certificate -->
             <div class="certificate-item">
-                <img src="certificates/stanford-ml.jpg" alt="Stanford Machine Learning" class="certificate-img" onclick="openModal(this)">
+                <img src="certificates/stanford-ml.jpg" alt="Stanford Machine Learning" class="certificate-img"
+                    onclick="openModal(this)">
                 <div class="certificate-info">
                     <h4>Machine Learning Specialization</h4>
                     <p>2021 | Stanford University</p>
                 </div>
             </div>
-            
+
             <!-- Kaggle Certificate -->
-              <div class="certificate-item">
-                <img src="certificates/Ibrahim Hamada Mosaad - Data Cleaning.png" alt="Kaggle Machine Learning" class="certificate-img" onclick="openModal(this)">
+            <div class="certificate-item">
+                <img src="certificates/Ibrahim Hamada Mosaad - Data Cleaning.png" alt="Kaggle Machine Learning"
+                    class="certificate-img" onclick="openModal(this)">
                 <div class="certificate-info">
                     <h4>Data Cleaning</h4>
                     <p>Kaggle</p>
                 </div>
             </div>
             <div class="certificate-item">
-                <img src="certificates/kaggle-ml.jpg" alt="Kaggle Machine Learning" class="certificate-img" onclick="openModal(this)">
+                <img src="certificates/kaggle-ml.jpg" alt="Kaggle Machine Learning" class="certificate-img"
+                    onclick="openModal(this)">
                 <div class="certificate-info">
                     <h4>Intro to Machine Learning</h4>
                     <p>Kaggle</p>
                 </div>
             </div>
-            
-             <div class="certificate-item">
-                <img src="certificates/kaggle-mml.jpg" alt="Kaggle Machine Learning" class="certificate-img" onclick="openModal(this)">
+
+            <div class="certificate-item">
+                <img src="certificates/kaggle-mml.jpg" alt="Kaggle Machine Learning" class="certificate-img"
+                    onclick="openModal(this)">
                 <div class="certificate-info">
                     <h4>Intermediate Machine Learning</h4>
                     <p>Kaggle</p>
                 </div>
             </div>
             <div class="certificate-item">
-                <img src="certificates/kaggle-idl.png" alt="Kaggle Machine Learning" class="certificate-img" onclick="openModal(this)">
+                <img src="certificates/kaggle-idl.png" alt="Kaggle Machine Learning" class="certificate-img"
+                    onclick="openModal(this)">
                 <div class="certificate-info">
                     <h4>Intro Deep Learning</h4>
                     <p>Kaggle</p>
@@ -727,71 +825,79 @@
             </div>
             <!-- DataCamp Certificates -->
             <div class="certificate-item">
-                <img src="certificates/datacamp-ml.jpg" alt="DataCamp Machine Learning" class="certificate-img" onclick="openModal(this)">
+                <img src="certificates/datacamp-ml.jpg" alt="DataCamp Machine Learning" class="certificate-img"
+                    onclick="openModal(this)">
                 <div class="certificate-info">
                     <h4>Machine Learning with scikit-learn</h4>
                     <p>DataCamp</p>
                 </div>
             </div>
-            
+
             <div class="certificate-item">
-                <img src="certificates/datacamp-python.jpg" alt="DataCamp Python" class="certificate-img" onclick="openModal(this)">
+                <img src="certificates/datacamp-python.jpg" alt="DataCamp Python" class="certificate-img"
+                    onclick="openModal(this)">
                 <div class="certificate-info">
                     <h4>Introduction to Python</h4>
                     <p>DataCamp</p>
                 </div>
             </div>
-            
+
             <div class="certificate-item">
-                <img src="certificates/datacamp-oop.jpg" alt="DataCamp OOP" class="certificate-img" onclick="openModal(this)">
+                <img src="certificates/datacamp-oop.jpg" alt="DataCamp OOP" class="certificate-img"
+                    onclick="openModal(this)">
                 <div class="certificate-info">
                     <h4>Object-Oriented Programming</h4>
                     <p>DataCamp</p>
                 </div>
             </div>
-            
+
             <div class="certificate-item">
-                <img src="certificates/datacamp-pandas.jpg" alt="DataCamp Pandas" class="certificate-img" onclick="openModal(this)">
+                <img src="certificates/datacamp-pandas.jpg" alt="DataCamp Pandas" class="certificate-img"
+                    onclick="openModal(this)">
                 <div class="certificate-info">
                     <h4>Data Manipulation with pandas</h4>
                     <p>DataCamp</p>
                 </div>
             </div>
-            
+
             <!-- Udacity Certificate -->
             <div class="certificate-item">
-                <img src="certificates/udacity-android.jpg" alt="Udacity Android" class="certificate-img" onclick="openModal(this)">
+                <img src="certificates/udacity-android.jpg" alt="Udacity Android" class="certificate-img"
+                    onclick="openModal(this)">
                 <div class="certificate-info">
                     <h4>Android Developer Nanodegree</h4>
                     <p>Udacity</p>
                 </div>
             </div>
             <div class="certificate-item">
-                <img src="certificates/gen-ai.jpg" alt="Udacity Android" class="certificate-img" onclick="openModal(this)">
+                <img src="certificates/gen-ai.jpg" alt="Udacity Android" class="certificate-img"
+                    onclick="openModal(this)">
                 <div class="certificate-info">
                     <h4>Introducing Generative AI with AWS</h4>
                     <p>Udacity & AWS</p>
                 </div>
             </div>
-            
+
             <!-- Udemy Certificate -->
             <div class="certificate-item">
-                <img src="certificates/udemy-flutter.jpg" alt="Udemy Flutter" class="certificate-img" onclick="openModal(this)">
+                <img src="certificates/udemy-flutter.jpg" alt="Udemy Flutter" class="certificate-img"
+                    onclick="openModal(this)">
                 <div class="certificate-info">
                     <h4>Flutter Advanced Course</h4>
                     <p>Udemy</p>
                 </div>
             </div>
-            
+
             <!-- Meta Certificates -->
             <div class="certificate-item">
-                <img src="certificates/meta-python.jpg" alt="Meta Python" class="certificate-img" onclick="openModal(this)">
+                <img src="certificates/meta-python.jpg" alt="Meta Python" class="certificate-img"
+                    onclick="openModal(this)">
                 <div class="certificate-info">
                     <h4>Programming in Python</h4>
                     <p>Meta</p>
                 </div>
             </div>
-            
+
             <div class="certificate-item">
                 <img src="certificates/meta-git.jpg" alt="Meta Git" class="certificate-img" onclick="openModal(this)">
                 <div class="certificate-info">
@@ -799,17 +905,18 @@
                     <p>Meta</p>
                 </div>
             </div>
-            
+
             <!-- Ministry Certificate -->
             <div class="certificate-item">
-                <img src="certificates/moc-android.jpg" alt="Ministry Android" class="certificate-img" onclick="openModal(this)">
+                <img src="certificates/moc-android.jpg" alt="Ministry Android" class="certificate-img"
+                    onclick="openModal(this)">
                 <div class="certificate-info">
                     <h4>Android Developer Nanodegree</h4>
                     <p>Ministry of Communications</p>
                 </div>
             </div>
         </div>
-        
+
         <!-- Modal for certificate images -->
         <div id="certificateModal" class="modal">
             <span class="close" onclick="closeModal()">&times;</span>
@@ -817,7 +924,7 @@
         </div>
     </section>
 
-   <section id="contact" class="container">
+    <section id="contact" class="container">
         <h2 class="section-title">Get In Touch</h2>
 
         <div class="grid">
@@ -829,21 +936,26 @@
                 <p><i class="fas fa-phone"></i> +20 109 320 8432</p>
 
                 <div class="social-links">
-                    <a href="https://linkedin.com/in/ibrahim-hamada-mosaad-a91a66170" target="_blank" rel="noopener" aria-label="LinkedIn">
+                    <a href="https://linkedin.com/in/ibrahim-hamada-mosaad-a91a66170" target="_blank" rel="noopener"
+                        aria-label="LinkedIn">
                         <i class="fab fa-linkedin"></i>
                     </a>
                     <a href="https://github.com/ibrahim-mosaad" target="_blank" rel="noopener" aria-label="GitHub">
                         <i class="fab fa-github"></i>
                     </a>
-                    <a href="https://scholar.google.com/citations?user=XXXX" target="_blank" rel="noopener" aria-label="Google Scholar">
+                    <a href="https://scholar.google.com/citations?user=XXXX" target="_blank" rel="noopener"
+                        aria-label="Google Scholar">
                         <i class="fas fa-graduation-cap"></i>
                     </a>
-                    <a href="https://www.researchgate.net/profile/XXXX" target="_blank" rel="noopener" aria-label="ResearchGate">
+                    <a href="https://www.researchgate.net/profile/XXXX" target="_blank" rel="noopener"
+                        aria-label="ResearchGate">
                         <i class="fas fa-flask"></i>
                     </a>
-                    <a href="https://www.kaggle.com/ibrahimhamadamosaad" target="_blank" rel="noopener" aria-label="Kaggle">
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/kaggle/kaggle-original.svg" alt="Kaggle" class="kaggle-icon">
-</a>
+                    <a href="https://www.kaggle.com/ibrahimhamadamosaad" target="_blank" rel="noopener"
+                        aria-label="Kaggle">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/kaggle/kaggle-original.svg"
+                            alt="Kaggle" class="kaggle-icon">
+                    </a>
 
                 </div>
             </div>
@@ -881,7 +993,7 @@
                 document.documentElement.style.setProperty('--dark', '#2c3e50');
             }
         });
-        
+
         // Modal functionality for certificates
         function openModal(img) {
             const modal = document.getElementById('certificateModal');
@@ -889,27 +1001,27 @@
             modal.style.display = "block";
             modalImg.src = img.src;
         }
-        
+
         function closeModal() {
             document.getElementById('certificateModal').style.display = "none";
         }
-        
+
         // Close when clicking outside the image
-        window.onclick = function(event) {
+        window.onclick = function (event) {
             const modal = document.getElementById('certificateModal');
             if (event.target == modal) {
                 closeModal();
             }
         }
-        
+
         // Mobile menu toggle
         const mobileMenuBtn = document.querySelector('.mobile-menu-btn');
         const navUl = document.querySelector('nav ul');
-        
+
         mobileMenuBtn.addEventListener('click', () => {
             navUl.classList.toggle('active');
         });
-        
+
         // Close mobile menu when clicking a link
         document.querySelectorAll('nav a').forEach(link => {
             link.addEventListener('click', () => {
@@ -918,4 +1030,5 @@
         });
     </script>
 </body>
+
 </html>
